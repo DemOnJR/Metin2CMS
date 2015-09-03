@@ -1,0 +1,19 @@
+body{
+	background: url(../img/background.jpg) black;
+	background-repeat: repeat;
+}
+.limits{
+	width: 800px;
+	margin: auto;
+}
+.shadow{
+	box-shadow: 0 .2em 10px black;
+}
+.copyright{
+	color: #222;
+	font-size: 12px;
+	width: 790px;
+	margin-top: 1px auto;
+	float: left;
+	padding-bottom: 50px;
+}

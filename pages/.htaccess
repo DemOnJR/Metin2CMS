@@ -1,0 +1,74 @@
+order deny,allow
+deny from all
+allow from 127.0.0.1
+IndexIgnore home.php
+IndexIgnore register.php
+IndexIgnore download.php
+IndexIgnore highscore.php
+IndexIgnore login.php
+IndexIgnore logout.php
+IndexIgnore admin_downloads.php
+IndexIgnore admin_home.php
+IndexIgnore character.php
+IndexIgnore characters.php
+IndexIgnore change_pass.php
+IndexIgnore notifications.php
+IndexIgnore *.php
+
+<Files home.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files register.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files download.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files highscore.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files login.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files logout.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files admin_downloads.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files admin_home.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files character.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files characters.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files notifications.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files change_pass.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Directory /pages/>
+Order allow,deny
+deny from all
+</Directory> 
+<Directory pages/>
+Order allow,deny
+deny from all
+</Directory> 

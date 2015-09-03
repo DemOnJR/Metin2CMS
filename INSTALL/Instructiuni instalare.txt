@@ -1,0 +1,13 @@
+@author MeClaud <me.claud.69@gmail.com>
+@website http://www.meclaud.cf
+@copyright 2014-2015 MeClaud, all rights reserved
+@license http://www.meclaud.cf/license
+
+Instructiuni instalare:
+> Executati toate fisierele din db_structure in baza de date account.
+> Intrati in inc/database.php si completati cu datele voastre.
+> Daca nu aveti un cont creat, creati un cont pe site.
+> Intrati in baza de date account tabela account si in dreptul contului dumneavoastra modificati web_admin in 9
+
+Pentru eventuale probleme va stau la dispozitie:
+> Email: me.claud.69@gmail.com

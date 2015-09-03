@@ -1,0 +1,45 @@
+order deny,allow
+deny from all
+allow from 127.0.0.1
+IndexIgnore config.php
+IndexIgnore functions.php
+IndexIgnore security.php
+IndexIgnore pages.php
+
+IndexIgnore database.php
+IndexIgnore data.php
+IndexIgnore *.php
+<Files config.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files functions.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files security.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files pages.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files database.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+<Files data.php>
+  Order Allow,Deny
+  Deny from all
+</Files>
+
+<Directory /inc/>
+Order allow,deny
+deny from all
+</Directory> 
+
+<Directory inc/>
+Order allow,deny
+deny from all
+</Directory> 
