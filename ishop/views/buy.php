@@ -20,7 +20,7 @@
 								$belPos = checkPos($_SESSION['userid']);
 								$possiblePos = findPos($belPos['islager'], 1);
 								if (!empty($possiblePos)) {
-									$addItem = $sqlServ->query("INSERT INTO player.item SET owner_id = '".$_SESSION['userid']."', window = 'MALL', pos = '".$possiblePos[0]."', count = '1', vnum = '".$getItemInfo->vnum."', socket0 = '3', socket1 = '3', socket2 = '3'");
+									$addItem = $sqlServ->query("INSERT INTO player.item SET owner_id = '".$_SESSION['userid']."', window = 'MALL', pos = '".$possiblePos[0]."', count = '1', vnum = '".$getItemInfo->vnum."'");
 									ishopLog($_SESSION['userid'], 'A cumparat '.$getItemInfo->nume.'['.$getItemInfo->id.']');
 									if (!$addItem) die(mysqli_error());
 									if ($addItem) {
