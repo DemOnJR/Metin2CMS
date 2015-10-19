@@ -2,6 +2,8 @@ Metin2CMS
 =============
 Metin2CMS este un website simplu de folosit destinat serverelor de Metin2.
 
+Imagini: http://imgur.com/a/rPBFl
+
 Contine: 
   - Panou utilizator (schimbare parola, mesaje de la administratori, formular donatii etc.)
   - Magazin de iteme (simplu dar eficient)
