@@ -36,6 +36,10 @@ if (isset($_POST['register']) && $_POST['register'] == "Inregistrare") {
 				$errors++;
 				error('Trebuie sa fiti de acord cu regulamentul jocului!');
 			}
+			if (strlen($socialid) > 7) {
+				$errors++;
+				error('Codul de siguranta trebuie sa aiba cel mult 7 cifre');
+			}
 			if($errors == 0){
 				if ($password == $rpassword) {
 					

@@ -3,12 +3,34 @@
 if (!defined('IN_INDEX')) {
     exit();
 }
-if(isset($_SESSION['useradmin']) && $_SESSION['useradmin'] >= $minlevel['ishopadmin']){ ?>
+if(isset($_SESSION['useradmin']) && $_SESSION['useradmin'] >= $minlevel['ishopadmin']){ 
+
+function ishopCatDelete($id) {
+	global $sqlServ;
+	$qryDelCat = $sqlServ->query("DELETE FROM account.cms_is_cats WHERE id={$id}");
+	if ($qryDelCat) {
+		return 1;
+	} else {
+		return 0;
+	}
+}
+?>
 <div class="panel panel-primary">
 	<div class="panel-heading">
 		<h3 class="panel-title"><?=$cfg['sitename'];?> - Administrare categorii ishop</h3>
 	</div>
 	<div class="panel-body">
+		<?php
+			if (isset($_POST['delete-cat'])) {
+				$id = filter_var($_POST['cat-id'], FILTER_SANITIZE_STRING);
+				if (ishopCatDelete($id) == 1) {
+					error('Categoria a fost stearsa','success');
+				} else {
+					error('Categoria nu a fost stearsa','danger');
+				}
+				
+			}
+		?>
 		<table class="table table-bordered">
 			<thead>
 				<th>ID</th>
@@ -22,6 +44,7 @@ if(isset($_SESSION['useradmin']) && $_SESSION['useradmin'] >= $minlevel['ishopad
 				<tr>
 					<td><?=$cat->id?></td>
 					<td><?=$cat->nume?></td>
+					<td class="col-xs-1"><form method="POST"><input type="hidden" name="cat-id" value="<?=$cat->id?>"><button title="Sterge categoria" type="submit" class="btn btn-danger btn-xs" name="delete-cat"><i class="fa fa-remove"></i></button></form></td>
 				</tr>
 			<?php
 				}

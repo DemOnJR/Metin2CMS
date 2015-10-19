@@ -36,7 +36,7 @@
 
 			Header('Content-Type: image/png');
 
-			$font = 'fonts/sig.TTF';
+			$font = 'fonts/Constantia.TTF';
 			$logo = 'fonts/logo.TTF';
 			$image = 'img/sig.PNG';
 			$img = imagecreatefrompng($image);

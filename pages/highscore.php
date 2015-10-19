@@ -83,7 +83,7 @@ while($row = mysqli_fetch_object($query))
         $limend = $plPerPage;
       } else {
         $limstart = $p * $plPerPage - $plPerPage ;
-        $limend = $limstart;
+        $limend = $plPerPage;
       }
 
       $qry1 = $sqlServ->query("SELECT player.id,player.name,player.level,player.exp,player_index.empire,guild.name AS guild_name 
