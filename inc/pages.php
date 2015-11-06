@@ -117,6 +117,10 @@
 			$pages['title'] = 'Log cumparaturi ishop';
 			$pages['file'] = 'pages/admin_ishop_log.php';
 			break;
+		case 'admin_gmlog':
+			$pages['title'] = 'Istoric comenzi GM';
+			$pages['file'] = 'pages/admin_gmlog.php';
+			break;
 
 		#### DEFAULT ####
 

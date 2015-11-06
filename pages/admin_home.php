@@ -49,7 +49,7 @@ if(isset($_SESSION['useradmin']) && $_SESSION['useradmin'] > 0){ ?>
 		<?php if($_SESSION['useradmin'] >= $minlevel['mods']) { ?>
 			<ul class="list-group">
 				<a class="list-group-item active">Module suplimentare</a>
-				
+				<?php if($_SESSION['useradmin'] >= $minlevel['logs']) { ?>	<a href="?page=admin_gmlog" class="list-group-item">LOG comenzi GM</a><?php } ?>
 			</ul>
 		<?php } ?>
 	</div>

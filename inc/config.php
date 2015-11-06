@@ -3,7 +3,7 @@
 
 	if($maintenance === false){
 		$cfg['toplimit']	= getset('top_limit'); // Cati jucatori sa afiseze topul
-		$cfg['cms_ver'] 	= "1.3.1";
+		$cfg['cms_ver'] 	= "1.3.2";
 		
 		// Config settings
 		if (getset('captcha') == 'true') {
