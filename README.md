@@ -12,4 +12,7 @@ Contine:
 Se bazeaza pe:
   - PHP 5.4 sau mai recent
   - Bootstrap 3
-  
+Alte tehnologii folosite:
+  - Font Awesome icons
+  - Themify Icons
+  - Tiny MCE
