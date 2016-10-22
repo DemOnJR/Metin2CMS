@@ -59,7 +59,7 @@ function ishopCatDelete($id) {
 				if ($qryAddCat) {
 					error("Categoria $catname a fost adaugata", 'success');
 				} else {
-					error("A aparut o eroare si nu a outut fi adaugata categoria");
+					error("A aparut o eroare si nu a putut fi adaugata categoria");
 				}
 				
 			}
