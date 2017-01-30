@@ -24,19 +24,19 @@ if (isset($_POST['register']) && $_POST['register'] == "Inregistrare") {
 				$errors++;
 				error('Parola este prea scurta!');
 			}
-			if (strlen($usermail) <= 4) {
+			if (!filter_var($usermail, FILTER_VALIDATE_EMAIL)) {
 				$errors++;
-				error('Adresa de email este prea scurta!');
+				error('Adresa de email este invalida!');
 			}
 			if (strlen($rlname) <= 2) {
 				$errors++;
-				error('Numele real este prea scurta!');
+				error('Va rugam sa introduceti un nume corect!');
 			}
 			if (!isset($_POST['agreed'])) {
 				$errors++;
-				error('Trebuie sa fiti de acord cu regulamentul jocului!');
+				error('Trebuie sa acceptati de acord cu regulamentul jocului!');
 			}
-			if (strlen($socialid) > 7) {
+			if (strlen($socialid) >= 8) {
 				$errors++;
 				error('Codul de siguranta trebuie sa aiba cel mult 7 cifre');
 			}
